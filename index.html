@@ -6,13 +6,13 @@
 <title>Hanna Hassel portfolio</title>
 <style>
   :root{
-    --bg: #fdf7fa;
+    --bg: #faf8f3;
     --surface: #ffffff;
     --ink: #1c1b1a;
     --muted: #6b6763;
-    --line: #f2dfe9;
-    --accent: #ff2f92;
-    --accent-soft: #ffe1f0;
+    --line: #e4e0d3;
+    --accent: #1e3a5f;
+    --accent-soft: #dde6ee;
     --accent-ink: #ffffff;
     --radius: 18px;
   }
@@ -31,7 +31,7 @@
   /* NAV */
   header.site{
     position:sticky; top:0; z-index:50;
-    background:rgba(253,247,250,0.88);
+    background:rgba(250,248,243,0.88);
     backdrop-filter: blur(8px);
     border-bottom:1px solid var(--line);
   }
@@ -57,7 +57,7 @@
     top:-180px; right:-160px;
     width:520px; height:520px;
     border-radius:50%;
-    background:radial-gradient(closest-side, rgba(255,47,146,.22), rgba(255,47,146,0));
+    background:radial-gradient(closest-side, rgba(30,58,95,.16), rgba(30,58,95,0));
     pointer-events:none;
   }
   .hero::after{
@@ -66,7 +66,7 @@
     bottom:-220px; left:-140px;
     width:420px; height:420px;
     border-radius:50%;
-    background:radial-gradient(closest-side, rgba(255,140,196,.20), rgba(255,140,196,0));
+    background:radial-gradient(closest-side, rgba(44,82,130,.14), rgba(44,82,130,0));
     pointer-events:none;
   }
   .hero .wrap{position:relative; z-index:1;}
@@ -81,7 +81,7 @@
     width:148px; height:148px; object-fit:cover;
     border-radius:22px;
     border:4px solid #fff;
-    box-shadow:0 16px 32px -12px rgba(255,47,146,.4), 0 0 0 3px var(--accent-soft);
+    box-shadow:0 16px 32px -12px rgba(30,58,95,.35), 0 0 0 3px var(--accent-soft);
   }
   @media (max-width:640px){
     .hero-inner{flex-direction:column-reverse; align-items:flex-start;}
@@ -107,8 +107,8 @@
     text-decoration:none; border:1px solid transparent; transition:transform .15s, box-shadow .15s;
   }
   .btn:hover{transform:translateY(-1px);}
-  .btn-primary{background:var(--accent); color:var(--accent-ink); box-shadow:0 8px 20px -8px rgba(255,47,146,.55);}
-  .btn-ghost{background:var(--accent-soft); border-color:transparent; color:#b0176a;}
+  .btn-primary{background:var(--accent); color:var(--accent-ink); box-shadow:0 8px 20px -8px rgba(30,58,95,.4);}
+  .btn-ghost{background:var(--accent-soft); border-color:transparent; color:#1e3a5f;}
 
   /* SECTION HEADS */
   .section{padding:64px 0;}
@@ -147,7 +147,7 @@
   .project:nth-child(even){grid-template-columns: 1fr 1.1fr;}
   .project:nth-child(even) .project-media{order:2;}
   .project-media{
-    background:#fbeaf3;
+    background:#eef1f4;
     display:flex; align-items:center; justify-content:center;
     min-height:280px;
     padding:24px;
@@ -211,13 +211,13 @@
 
   /* CONTACT */
   .contact{
-    background:linear-gradient(135deg, #ff2f92, #ff85bb 65%, #ffb4d4);
+    background:linear-gradient(135deg, #1e3a5f, #2c5282 65%, #3b6ea5);
     color:#fff; border-radius:24px;
     padding:56px 48px; text-align:center; margin:0 0 40px;
   }
   .contact h2{font-size:clamp(28px,4vw,38px); margin:0 0 14px; letter-spacing:-0.02em;}
-  .contact p{color:#ffe6f2; font-size:16px; margin:0 0 28px;}
-  .contact .btn-primary{background:#fff; color:#ff2f92; box-shadow:0 10px 24px -10px rgba(0,0,0,.25);}
+  .contact p{color:#dbe6f0; font-size:16px; margin:0 0 28px;}
+  .contact .btn-primary{background:#fff; color:#1e3a5f; box-shadow:0 10px 24px -10px rgba(0,0,0,.25);}
   .contact-details{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
 
   footer{padding:32px 0 60px; text-align:center; color:var(--muted); font-size:13.5px;}
